@@ -11,14 +11,22 @@
 <body>
     <div class="background"></div>
     <img src="images/Bird.png" alt="invalid-img" class="bird" id="bird-1">
+    <div class="button">
+        <button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br>
+        <button onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button>
+        <button onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br>
+        <button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>
+    </div>
     <div class="message">
         Enter To Start Game <p><span style="color: red">&uarr;</span>ArrowUp to Control</p>
+        <p>NIM: 23430255, <b>Novianty</b>, https://github.com/noviantyy/wd-joycon-htmlcssjs.git</p>
     </div>
     <div class="score">
         <span class="score_title"></span>
         <span class="score_val"></span>
     </div>
 
+    
 
      <!-- buat komponen yang menggambarkan controller @MUTAMA -->
     <!--    [^]                -->
@@ -56,5 +64,6 @@
     <!--  -->
     <!-- kamu boleh menambahkan sprite di samping textscreen yang sudah ada @POINPLUS -->
     <!-- di ujung kanan bawah, tambahkan informasi NIM, nama, dan link Github @UTAMA -->
+    
 </body>
 </html>

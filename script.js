@@ -14,6 +14,7 @@ let score_val = document.querySelector('.score_val');
 let message = document.querySelector('.message');
 let score_title = document.querySelector('.score_title');
 
+
 let game_state = 'Start';
 img.style.display = 'none';
 message.classList.add('messageStyle');
@@ -80,6 +81,21 @@ function play(){
 
         document.addEventListener('keyup', (e) => {
             if(e.key == 'ArrowUp' || e.key == ' '){
+                img.src = 'images/Bird.png';
+            }
+        });
+
+        if(game_state != 'Play') return;
+        bird_dy = bird_dy + grativy;
+        document.addEventListener('keyright', (e) => {
+            if(e.key == 'ArrowRight' || e.key == ' '){
+                img.src = 'images/Bird-2.png';
+                bird_dy = -7.6;
+            }
+        });
+
+        document.addEventListener('keyleft', (e) => {
+            if(e.key == 'ArrowLeft' || e.key == '37 '){
                 img.src = 'images/Bird.png';
             }
         });

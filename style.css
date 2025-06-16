@@ -80,4 +80,7 @@
 	.pipe_sprite{
 		width: 14vw;
 	}
+	.button{
+		font-size: 8vh;
+	}
 }
